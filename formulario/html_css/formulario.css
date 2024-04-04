@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el formulario */
+section {
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+#agregar form {
+    width: 100%; /* Ajuste para el formulario de agregar producto */
+}
+
+#agregar label {
+    display: block;
+    margin-bottom: 5px; /* Espaciado entre label y input */
+}
+
+#agregar input,
+#agregar button {
+    display: block;
+    width: calc(100% - 20px); /* Ajuste para input y button */
+    padding: 10px;
+    margin-bottom: 15px; /* Espaciado entre input y button */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#agregar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el select de edición */
+#edicion select {
+    width: calc(100% - 20px); /* Ajuste para el padding */
+    padding: 10px;
+    margin-bottom: 15px; /* Espaciado entre elementos */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Estilos para el botón de editar en el select */
+#edicion button {
+    width: calc(100% - 20px); /* Ajuste para el padding */
+    padding: 10px;
+    margin-bottom: 15px; /* Espaciado entre elementos */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para hacer la página responsive */
+@media screen and (max-width: 768px) {
+    section {
+        max-width: 300px;
+    }
+}

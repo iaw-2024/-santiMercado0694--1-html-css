@@ -1,0 +1,8 @@
+.form-control:focus {
+    border-color: #4F46E5; /* Color del borde cuando está enfocado */
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.5); /* Efecto de sombra */
+}
+
+.btn-primary:hover {
+    background-color: #4338CA; /* Color de fondo del botón primario al pasar el mouse */
+}
