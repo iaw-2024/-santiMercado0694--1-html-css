@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Compras Tailwind</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="formularioTailwind.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white py-3">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center">Editar lista de Compras</h1>
+        </div>
+    </header>
+    <main class="container mx-auto mt-8 px-4">
+        <section id="agregar" class="mx-auto mb-8 max-w-md">
+            <h2 class="text-xl font-semibold mb-4">Agregar Producto</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="nombre" class="block text-sm font-semibold mb-1">Nombre del producto:</label>
+                    <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 form-control" required>
+                </div>
+                <div class="mb-4">
+                    <label for="precio" class="block text-sm font-semibold mb-1">Precio:</label>
+                    <input type="number" id="precio" name="precio" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 form-control" min="0" required>
+                </div>
+                <div class="flex justify-start">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 btn-primary">Agregar Producto</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="edicion" class="mx-auto mb-8 max-w-md">
+            <h2 class="text-xl font-semibold mb-4">Editar Producto</h2>
+            <div class="mb-4 max-w-md">
+                <select id="productoEditar" name="productoEditar" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 form-control">
+                    <option value="Atún">Atún</option>
+                    <option value="Pure de papas">Pure de papas</option>
+                    <option value="Queso">Queso</option>
+                    <option value="Pollo">Pollo</option>
+                    <option value="Carne">Carne</option>
+                    <option value="Pescado">Pescado</option>
+                    <option value="Helado">Helado</option>
+                    <option value="Coca Cola">Coca Cola</option>
+                </select>
+            </div>
+            <div class="flex justify-start">
+                <button type="button" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">Editar Producto</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
